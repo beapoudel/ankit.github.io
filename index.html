@@ -1,256 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankit Poudel - Full Stack Developer</title>
+    <title>Ankit Poudel | Full-Stack & AI Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="logo">AP</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
+    <header class="header">
         <div class="container">
-            <div class="hero-content">
-                <img src="WhatsApp Image 2025-10-09 at 6.22.48 PM.jpeg" alt="Ankit Poudel" class="profile-photo">
-                <div class="hero-text">
-                    <h1>Ankit Poudel</h1>
-                    <p class="subtitle">B.Tech student with hands-on experience in full-stack development (React, Node.js, Django) and AI engineering (LangChain, RAG, Hugging Face). I'm passionate about building innovative solutions to real-world problems. Seeking to apply my project experience to a challenging software development role.</p>
-                    <a href="#projects" class="cta-button">View My Work</a>
-                </div>
+            <div class="navbar">
+                <a href="#" class="nav-logo">AP</a>
+                <nav class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <button id="mobile-menu-button" class="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">C++</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">LangChain</span>
-                        <span class="skill-tag">Hugging Face</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>AI/ML & Databases</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">RAG Systems</span>
-                        <span class="skill-tag">OpenAI API</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">Vector DB</span>
-                        <span class="skill-tag">Chroma</span>
-                        <span class="skill-tag">Pinecone</span>
-                        <span class="skill-tag">FAISS</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">VS Code</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Medical Report Analyzer</h3>
-                        <p class="project-date">RAG System Project</p>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">
-                            Developed a RAG (Retrieval-Augmented Generation) system to help users understand complex medical reports. The system enables users to upload documents, receive AI-generated summaries, and ask specific questions via an integrated chatbot.
+    <main>
+        <section id="home" class="home-about-section">
+            <div class="container">
+                <div class="home-about-grid">
+                    <div class="hero-content-col">
+                        <h1>Hi, I'm <span class="accent-color">Ankit Poudel</span></h1>
+                        <p class="animated-subtitle-container">
+                            <span id="animated-text" class="animated-text"></span>
                         </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">LangChain</span>
-                            <span class="tech-badge">OpenAI API</span>
-                            <span class="tech-badge">Hugging Face</span>
-                            <span class="tech-badge">RAG</span>
-                            <span class="tech-badge">Django</span>
-                            <span class="tech-badge">Vector DB</span>
+                        <div class="hero-buttons">
+                            <a href="https://github.com/beapoudel" target="_blank" class="btn btn-secondary">
+                                <i data-lucide="github"></i> GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/your-profile" target="_blank" class="btn btn-primary">
+                                <i data-lucide="linkedin"></i> LinkedIn
+                            </a>
                         </div>
-                        <a href="https://vedh-medic.onrender.com/" target="_blank" class="project-link">View Project →</a>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Zannat</h3>
-                        <p class="project-date">July 2025 – August 2025</p>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">
-                            E-commerce Platform - Designed and built a full-stack e-commerce website for a clothing brand from the ground up. Engineered core functionalities including user authentication, product catalogs, shopping cart management, and a secure checkout process.
+                    <div class="about-content-col">
+                        <img src="WhatsApp Image 2025-10-09 at 6.22.48 PM.jpeg" alt="Ankit Poudel" class="profile-image">
+                        <h2 class="about-title">
+                            <i data-lucide="user-round"></i> About Me
+                        </h2>
+                        <p class="about-text">
+                            B.Tech student with hands-on experience in full-stack development (React, Node.js, Django) and AI engineering (LangChain, RAG, Hugging Face). I'm passionate about building innovative solutions to real-world problems.
                         </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">React.js</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge">Full Stack</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section bg-gray-900/50 fade-in-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i data-lucide="code-2"></i> My Tech Stack
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-card glass-effect-box"><h3>Languages</h3><div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">JavaScript</span><span class="skill-tag">C</span><span class="skill-tag">C++</span></div></div>
+                    <div class="skill-card glass-effect-box"><h3>Frameworks & Tools</h3><div class="skill-tags"><span class="skill-tag">React.js</span><span class="skill-tag">Node.js</span><span class="skill-tag">Django</span><span class="skill-tag">LangChain</span><span class="skill-tag">Git & GitHub</span></div></div>
+                    <div class="skill-card glass-effect-box"><h3>AI/ML & Databases</h3><div class="skill-tags"><span class="skill-tag">OpenAI API</span><span class="skill-tag">Hugging Face</span><span class="skill-tag">RAG</span><span class="skill-tag">Vector DB</span><span class="skill-tag">MySQL</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section fade-in-section">
+            <div class="container">
+                <h2 class="section-title">
+                     <i data-lucide="lightbulb"></i> Projects
+                </h2>
+                <div class="projects-grid">
+                    <div class="project-card" style="--bg-image: url('Screenshot\ from\ 2025-08-19\ 19-03-47.png');">
+                        <div class="project-content-overlay">
+                            <h3>Medical Report Analyzer</h3>
+                            <p>A RAG system to help users understand complex medical reports via summarization and a chatbot.</p>
+                            <div class="project-tech">
+                                <span class="tech-sky">Python</span>
+                                <span class="tech-sky">LangChain</span>
+                                <span class="tech-sky">RAG</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://vedh-medic.onrender.com/" target="_blank" class="link-sky"><i data-lucide="external-link" style="width:16px; height:16px;"></i> Live Demo</a>
+                                <a href="https://github.com/beapoudel/Vedh-Medic" target="_blank" class="link-sky"><i data-lucide="github" style="width:16px; height:16px;"></i> GitHub</a>
+                            </div>
                         </div>
-                        <a href="https://zannats.com/" target="_blank" class="project-link">View Project →</a>
                     </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Vedh AI MCQ</h3>
-                        <p class="project-date">AI-Powered Learning Platform</p>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">
-                            An intelligent MCQ (Multiple Choice Question) generator that creates customized quizzes on any topic. Users can specify topics and the number of questions. The system generates high-quality MCQs with explanations using AI.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">React.js</span>
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">LangChain</span>
-                            <span class="tech-badge">Gemini API</span>
-                            <span class="tech-badge">AI/ML</span>
+                    <div class="project-card" style="--bg-image: url('Screenshot\ from\ 2025-10-13\ 22-58-15.png');">
+                        <div class="project-content-overlay">
+                            <h3>Zannat</h3>
+                            <p>A full-stack e-commerce website for a clothing brand with user auth, product catalogs, and a secure cart.</p>
+                            <div class="project-tech">
+                                <span class="tech-pink">React.js</span>
+                                <span class="tech-pink">Node.js</span>
+                                <span class="tech-pink">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://zannats.com/" target="_blank" class="link-pink"><i data-lucide="external-link" style="width:16px; height:16px;"></i> Live Demo</a>
+                            </div>
                         </div>
-                        <a href="https://vedh.onrender.com/" target="_blank" class="project-link">View Project →</a>
+                    </div>
+
+                    <div class="project-card" style="--bg-image: url('Screenshot\ from\ 2025-10-13\ 23-01-38.png');">
+                        <div class="project-content-overlay">
+                           <h3>Vedh AI MCQ</h3>
+                           <p>An intelligent MCQ generator that creates customized quizzes on any topic using the Gemini API.</p>
+                           <div class="project-tech">
+                                <span class="tech-purple">React.js</span>
+                                <span class="tech-purple">Gemini API</span>
+                                <span class="tech-purple">LangChain</span>
+                           </div>
+                           <div class="project-links">
+                                <a href="https://vedh.onrender.com/" target="_blank" class="link-purple"><i data-lucide="external-link" style="width:16px; height:16px;"></i> Live Demo</a>
+                                <a href="https://github.com/beapoudel/Vedh-Frontend" target="_blank" class="link-purple"><i data-lucide="github" style="width:16px; height:16px;"></i> GitHub</a>
+                           </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-items">
-                <div class="education-item">
-                    <h3>B.Tech in Computer Science and Engineering</h3>
-                    <p class="institution">University of Science and Technology, Meghalaya</p>
-                    <p class="duration">August 2023 – May 2027</p>
-                </div>
-                <div class="education-item">
-                    <h3>Class 12</h3>
-                    <p class="institution">Pragjyotish College</p>
-                    <p class="duration">June 2021 - June 2023</p>
+                <div class="view-all-btn-container">
+                    <a href="https://github.com/beapoudel?tab=repositories" target="_blank" class="btn-outline">
+                        View All Projects
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p style="text-align: center; font-size: 1.1rem; color: #555; margin-bottom: 30px;">
-                I'm always interested in hearing about new projects and opportunities.
-            </p>
-            <div class="social-links" style="background: white; padding: 0; margin: 0;">
-                <a href="mailto:ankit.poudel.dev@gmail.com">Email</a>
-                <a href="https://github.com/beapoudel" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/ankit-poudel-047ab8293/" target="_blank">LinkedIn</a>
-                <a href="https://x.com/be_a_poudel" target="_blank">Twitter</a>
+        <section id="achievements" class="section bg-gray-900/50 fade-in-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i data-lucide="award"></i> Achievements
+                </h2>
+                <div class="glass-effect-box" style="display:inline-block;">
+                    <h3>Smart India Hackathon (SIH)</h3>
+                    <p>Selected for internal university rounds in both 2024 and 2025.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="mailto:ankit.poudel.dev@gmail.com">Email</a>
-                <a href="https://github.com/beapoudel" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/ankit-poudel-047ab8293/" target="_blank">LinkedIn</a>
+        <section id="contact" class="section fade-in-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p>I'm currently open to new opportunities. My inbox is always open, whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <a href="mailto:ankit.poudel@email.com" class="btn btn-primary" style="font-size: 1.125rem; margin: 0 auto; display: table;">
+                    Say Hello
+                </a>
             </div>
-            <p>&copy; 2025 Ankit Poudel. All rights reserved.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ankit Poudel. Crafted with passion.</p>
         </div>
     </footer>
 
     <script>
+        // Lucide Icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('is-open');
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                if(mobileMenu.classList.contains('is-open')){
+                    mobileMenu.classList.remove('is-open');
+                }
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if(targetElement) {
+                   targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                   });
                 }
             });
         });
-
-        // Add animation on scroll
+        
+        // Intersection Observer for fade-in animations
+        const sections = document.querySelectorAll('.fade-in-section');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeIn 0.8s ease';
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
                 }
             });
+        }, {
+            threshold: 0.1
         });
 
-        document.querySelectorAll('section').forEach(section => {
+        sections.forEach(section => {
             observer.observe(section);
         });
 
-        // Active navigation link highlighting
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (scrollY >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
+        // Typing Animation
+        const animatedText = document.getElementById('animated-text');
+        const phrases = ["Full-Stack Developer", "AI Engineer"];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
 
-            document.querySelectorAll('nav a').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.style.color = '#667eea';
-                } else {
-                    link.style.color = '#333';
-                }
-            });
+        function type() {
+            const currentPhrase = phrases[phraseIndex];
+            if (isDeleting) {
+                animatedText.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                animatedText.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 100 : 150;
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                typeSpeed = 2000; // Pause at end of word
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 500; // Pause before typing new word
+            }
+            
+            setTimeout(type, typeSpeed);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(type, 250); // Start animation after a short delay
         });
+
     </script>
 </body>
 </html>
+
